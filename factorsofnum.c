@@ -5,9 +5,12 @@ int main()
   scanf("%d",&n);
   for(int i=1;i<=n;i++)
   {
-    if(n%i==0)
+    if(i%2==1)
     {
-      printf("%d\t",i);
+     if(n%i==0)
+     {
+       printf("%d\t",i);
+     }
     }
   }
   return 0;
