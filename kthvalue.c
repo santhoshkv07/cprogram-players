@@ -12,8 +12,13 @@ int main()
   {
     if(x[i]==k)
     {
-      printf("%d",x[i]);
+      printf("yes");
     }
+    else
+      {
+      printf("no");
+    }
+    
   }
   return 0;
 }
