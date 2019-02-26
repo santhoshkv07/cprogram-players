@@ -10,6 +10,6 @@ int main()
       reverse = reverse + n%10;
       n       = n/10;
    }
-   printf("Reverse of entered number is = %d\n", reverse);
+   printf("%d\n", reverse);
    return 0;
    }
