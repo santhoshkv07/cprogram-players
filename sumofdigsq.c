@@ -10,6 +10,6 @@
 		sum=sum+sq;
 		num=num/10;
 	}
-	printf("\n%d",sum);
+	printf("%d",sum);
 	return 0;
 }
