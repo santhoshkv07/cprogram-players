@@ -1,6 +1,5 @@
 #include <stdio.h>
- 
-int main(void) 
+ int main() 
 {
 	int num,sum=0,sq,rem;
 	scanf("%d",&num);
