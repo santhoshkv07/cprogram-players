@@ -3,14 +3,14 @@
 int main()
 {
 	char n[10];
-	int n,i;
+	int n,j;
 	scanf("%[^\t\n]s",n);
 	n=strlen(n);
-	for(i=0;i<n;i++)
+	for(j=0;j<n;j++)
 	{
-	   if(n[i]!=' ')
+	   if(n[j]!=' ')
 	   {
-	       printf("%c",n[i]);
+	       printf("%c",n[j]);
 	   }
 	}
         return 0;
