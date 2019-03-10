@@ -1,12 +1,12 @@
-#include<stdio.h>
+#include <stdio.h>
 #include<math.h>
 #define pi 3.14
-int main()
+int main(void) 
 {
-   int A;
-   float res;
-   scanf("%d",&A);
-   res=sin(A*pi/180);
-   printf("%0.1f",res);
-   return 0;
+	int n;
+	float res;
+	scanf("%d",&n);
+	res=sin(n*pi/180);
+	printf("%f",res);
+	return 0;
 }
