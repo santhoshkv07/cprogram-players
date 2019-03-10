@@ -8,12 +8,11 @@ int main()
 	scanf("%s",str2);
 	for(i=0;i<n;i++)
 	{
-		
-	}
 	for(j=0;j<m;j++)
 	{
 		str1[i]=str2[j];
 		i++;
+	}
 	}
 	str1[i]='\0';
 	for(i=0;str1[i]!='\0';i++)
