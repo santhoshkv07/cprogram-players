@@ -1,28 +1,16 @@
 #include <stdio.h>
 int main() 
 {
-	int n,k;
-	scanf("%d %d",&n,&k);
-	int array[n],i,j,temp;
+	int n;
+	scanf("%d",&n);
+	int array[n],i;
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&array[i]);
-	}	
-	for(i=0;i<n;i++)
-	{
-		for(j=i+1;j<n;j++)
-		{
-		if(array[i]>array[j])
-		{
-			temp=array[i];
-			array[i]=array[j];
-			array[j]=temp;
-		}
-		}
+		scanf("%d ",&array[i]);
 	}
 	for(i=0;i<n;i++)
 	{
-		if(array[i]<k)
+		if(array[i]<n)
 		{
 			printf("%d ",array[i]);
 		}
