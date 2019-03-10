@@ -2,16 +2,16 @@
 int main()
 {
  char s[10000],t;
- int i,c=0,l,l2;
+ int i,count=0,l,l2;
  gets(s);
  scanf("%c",&t);
  for(i=0;s[i]!='\0';i++)
  {
      if(s[i]==t)
        {
-          printf("%d",i+1);
-          break;     
+         count++;     
        }
  }
+ printf("%d",count);
   return 0;
 }
