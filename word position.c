@@ -2,20 +2,51 @@
 #include<string.h>
 int main()
 {
-   char s[30], t[20];
-   char *found;
-   puts("Enter the first string: ");
-   gets(s);
-   puts("Enter the string to be searched: ");
-   gets(t);
-   found = strstr(s, t);
-   if(found)
-   {
-      printf("Second String is found in the First String at %d position.\n", found - s);
-   }
-   else
-   {
-      printf("-1");
-   }
-   return 0;
+    char *a,b[100],c[100];
+    int i,j,k=0,n=0,l=0,m,s=0;
+    gets(a);
+    scanf("%s",b);
+    m=strlen(b);
+    for(i=0;a[i]!='\0';i++)
+    {
+        if(a[i]!=' ')
+        {
+           c[k]=a[i]; 
+           k++;
+        }
+        if(a[i]==' ')
+        {
+            s++;
+            for(j=0;j<k;j++)
+            {
+                if(c[j]==b[l])
+                {
+                    n++;
+                }
+                l++;
+            }
+            for(j=0;j<k;j++)
+            {
+                c[j]='\0';
+                n=0;
+                l=0;
+            }
+        }
+    }
+    n=0;
+    l=0;
+        for(j=0;j<k;j++)
+            {
+                if(c[j]==b[l])
+                {
+                    n++;
+                    l++;
+                }
+            }
+            if(m==n)
+            {
+                s++;
+            }       
+    printf("%d",s-1);
+    return 0;
 }
