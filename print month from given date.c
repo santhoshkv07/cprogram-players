@@ -45,15 +45,15 @@ int main()
 	}
 	else
 	{
-		if(str[4]=='0')
+		if(str[5]=='0')
 		{
 			printf("october");
 		}
-		else if(str[4]=='1')
+		else if(str[5]=='1')
 		{
 			printf("november");
 		}
-		else if(str[4]=='2')
+		else if(str[5]=='2')
 		{
 			printf("december");
 		}
